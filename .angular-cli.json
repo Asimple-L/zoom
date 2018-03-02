@@ -19,9 +19,14 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "styles": [
-        "styles.css"
+        "../node_modules/bootstrap/dist/css/bootstrap.css",
+        "./app/@theme/styles/styles.scss",
+        "../node_modules/ionicons/scss/ionicons.scss",
+        "../node_modules/font-awesome/scss/font-awesome.scss",
+        "../node_modules/nebular-icons/scss/nebular-icons.scss"
       ],
-      "scripts": [],
+      "scripts": [
+      ],
       "environmentSource": "environments/environment.ts",
       "environments": {
         "dev": "environments/environment.ts",
