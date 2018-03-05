@@ -4,83 +4,51 @@ export const MENU_ITEMS: NbMenuItem[] = [
   {
     title: '首页',
     icon: 'nb-home',
-    link: '/pages/dashboard',
+    link: '/pages/structed',
     home: true,
   },
   {
-    title: '栏目',
+    title: '功能',
     group: true,
   },
   {
-    title: '新闻分析',
-    icon: 'nb-home',
-    link: '/pages/analyse',
+    title: '结构化',
+    icon: 'nb-edit',
+    link: '/pages/structed',
   },
   {
-    title: '数据收集',
+    title: 'url数据分析',
     icon: 'nb-keypad',
-    link: '/pages/ui-features',
-    children: [
-      {
-        title: 'Buttons',
-        link: '/pages/ui-features/buttons',
-      },
-      {
-        title: 'Grid',
-        link: '/pages/ui-features/grid',
-      },
-      {
-        title: 'Icons',
-        link: '/pages/ui-features/icons',
-      },
-      {
-        title: 'Modals',
-        link: '/pages/ui-features/modals',
-      },
-      {
-        title: 'Typography',
-        link: '/pages/ui-features/typography',
-      },
-      {
-        title: 'Animated Searches',
-        link: '/pages/ui-features/search-fields',
-      },
-      {
-        title: 'Tabs',
-        link: '/pages/ui-features/tabs',
-      },
-    ],
+    link: '/pages/url',
+    // children: [
+    //   {
+    //     title: 'Buttons',
+    //     link: '/pages/ui-features/buttons',
+    //   },
+    //   {
+    //     title: 'Grid',
+    //     link: '/pages/ui-features/grid',
+    //   },
+    // ],
   },
   {
-    title: '查询出处',
+    title: '文本分析',
     icon: 'nb-compose',
+    link: '/pages/article',
+  },
+  {
+    title: '企业信息变动查询',
+    icon: 'nb-bar-chart',
     children: [
       {
         title: 'Form Inputs',
         link: '/pages/forms/inputs',
       },
-      {
-        title: 'Form Layouts',
-        link: '/pages/forms/layouts',
-      },
     ],
   },
   {
-    title: '结构化',
-    icon: 'nb-gear',
-    children: [
-      {
-        title: 'Tree',
-        link: '/pages/components/tree',
-      }, {
-        title: 'Notifications',
-        link: '/pages/components/notifications',
-      },
-    ],
-  },
-  {
-    title: '个人中心',
-    icon: 'nb-location',
+    title: 'API说明',
+    icon: 'nb-cloudy',
     children: [
       {
         title: 'Google Maps',
@@ -98,65 +66,19 @@ export const MENU_ITEMS: NbMenuItem[] = [
   },
   {
     title: '关于我们',
-    icon: 'nb-bar-chart',
+    icon: 'nb-sunny',
     children: [
       {
-        title: 'Echarts',
+        title: '项目简介',
         link: '/pages/charts/echarts',
       },
       {
-        title: 'Charts.js',
+        title: '团队介绍',
         link: '/pages/charts/chartjs',
       },
       {
-        title: 'D3',
+        title: '联系我们',
         link: '/pages/charts/d3',
-      },
-    ],
-  },
-  {
-    title: 'Editors',
-    icon: 'nb-title',
-    children: [
-      {
-        title: 'TinyMCE',
-        link: '/pages/editors/tinymce',
-      },
-      {
-        title: 'CKEditor',
-        link: '/pages/editors/ckeditor',
-      },
-    ],
-  },
-  {
-    title: 'Tables',
-    icon: 'nb-tables',
-    children: [
-      {
-        title: 'Smart Table',
-        link: '/pages/tables/smart-table',
-      },
-    ],
-  },
-  {
-    title: 'Auth',
-    icon: 'nb-locked',
-    children: [
-      {
-        title: 'Login',
-        link: '/auth/login',
-      },
-      {
-        title: 'Register',
-        link: '/auth/register',
-      },
-      {
-        title: 'Request Password',
-        link: '/auth/request-password',
-      },
-      {
-        title: 'Reset Password',
-        link: '/auth/reset-password',
       },
     ],
   },
