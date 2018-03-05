@@ -37,7 +37,7 @@ export const MENU_ITEMS: NbMenuItem[] = [
     link: '/pages/article',
   },
   {
-    title: '企业信息变动查询',
+    title: '舆情分析',
     icon: 'nb-bar-chart',
     children: [
       {

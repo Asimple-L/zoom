@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { PagesComponent } from './pages.component';
 import { PagesRoutingModule } from './pages-routing.module';
 import { ThemeModule } from '../@theme/theme.module';
+import {NgxEchartsModule} from 'ngx-echarts';
 
 const PAGES_COMPONENTS = [
   PagesComponent,
@@ -12,6 +13,7 @@ const PAGES_COMPONENTS = [
   imports: [
     PagesRoutingModule,
     ThemeModule,
+    NgxEchartsModule
   ],
   declarations: [
     ...PAGES_COMPONENTS,
