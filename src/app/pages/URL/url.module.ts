@@ -7,7 +7,7 @@ import {UrlRoutingModule} from './url-routing.module';
 import { SearchPageComponent } from './search-page/search-page.component';
 import { SearchResultComponent } from './search-result/search-result.component';
 import {ThemeModule} from '../../@theme/theme.module';
-import {SearchGuard} from './guard/search.guard';
+import {SearchGuard} from '../guard/search.guard';
 
 const component = [
   UrlComponent,

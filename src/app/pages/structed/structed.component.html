@@ -1,0 +1,32 @@
+<div class="row">
+  <div class="col-md-12">
+    <nb-card>
+      <nb-card-header>
+        <div class="input-group has-find-icon">
+          <input type="text" placeholder="请输入搜索内容" class="form-control"/>
+          <span class="input-group-btn">
+            <button class="btn btn-success" [routerLink]="['/pages/structed/searchcontent']" [queryParams] = "{ search: search }">Go</button>
+          </span>
+          <button type="submit" class="btn btn-warning btn-add" (click)="isAddKeywordHidden = !isAddKeywordHidden">添加限定字</button>
+        </div>
+        <div [hidden]="isAddKeywordHidden" class="row full-name-inputs" style="transition:2s linear all;">
+          <div class="col-sm-6 input-group">
+            <input type="text" placeholder="关键字" class="form-control" [(ngModel)]="newWord"/>
+          </div>
+          <div class="col-sm-6 input-group">
+            <!--<button type="submit" class="btn btn-success" (click)="addKeyword()">添加</button>-->
+            <button type="button" class="btn btn-warning btn-icon" (click)="addLimitiword()">
+              <i class="ion-checkmark-round"></i>
+            </button>
+          </div>
+        </div>
+        <div>
+          <span *ngFor="let key of newWords">{{key}}</span>
+        </div>
+      </nb-card-header>
+    </nb-card>
+  </div>
+  <div class="col-md-8">
+    <div echarts [options] = "options" class="demo-chart" style="height: 200px;"></div>
+  </div>
+</div>
