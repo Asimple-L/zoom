@@ -3,7 +3,7 @@
     <nb-card>
       <nb-card-header>
         <div class="input-group has-find-icon">
-          <input type="text" placeholder="请输入搜索内容" class="form-control"/>
+          <input type="text" placeholder="请输入搜索内容" class="form-control" [(ngModel)]="search"/>
           <span class="input-group-btn">
             <button class="btn btn-success" [routerLink]="['/pages/structed/searchcontent']" [queryParams] = "{ search: search }">Go</button>
           </span>

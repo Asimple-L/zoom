@@ -30,7 +30,7 @@ import 'rxjs/add/operator/delay';
                    [right]="sidebar.id === 'right'">
         <nb-sidebar-header>
           <a href="https://github.com/Asimple-L/zoom" class="btn btn-hero-success main-btn">
-            <i class="ion ion-social-github"></i> <span>支 持 我 们</span>
+            <i class="ion ion-ios-eye"></i> <span>Z O O M</span>
           </a>
         </nb-sidebar-header>
         <ng-content select="nb-menu"></ng-content>

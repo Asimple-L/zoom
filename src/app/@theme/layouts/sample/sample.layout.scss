@@ -48,8 +48,9 @@
     margin-top: nb-theme(sidebar-header-gap);
 
     /deep/ .main-container {
-      height:
-        calc(#{nb-theme(sidebar-height)} - #{nb-theme(header-height)} - #{nb-theme(sidebar-header-gap)}) !important;
+      //height:
+      //  calc(#{nb-theme(sidebar-height)} - #{nb-theme(header-height)} - #{nb-theme(sidebar-header-gap)}) !important;
+      height: calc(100vh - 4.75rem - 0rem) !important;
       border-top-right-radius: nb-theme(radius);
     }
 

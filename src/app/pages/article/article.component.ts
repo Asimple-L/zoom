@@ -218,4 +218,7 @@ export class ArticleComponent implements OnInit, AfterViewInit, OnDestroy {
   ngOnDestroy(): void {
     this.themeSubscription.unsubscribe();
   }
+  toAnalyse() {
+    return ;
+  }
 }
