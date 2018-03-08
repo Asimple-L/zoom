@@ -6,9 +6,8 @@
       </nb-card-header>
       <nb-card-body>
         <div class="input-group">
-          <textarea rows="5" placeholder="please input ..." class="form-control" [formControl]="srcText"></textarea>
+          <textarea rows="5" placeholder="输入文本开始分析" class="form-control" [formControl]="srcText"></textarea>
         </div>
-        <span>{{srcTextContent}}</span>
         <button type="submit" class="btn btn-hero-info btn-demo btn-sm analyseSubmit" (click)="toAnalyse()">提交文本</button>
       </nb-card-body>
     </nb-card>

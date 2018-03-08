@@ -7,6 +7,7 @@ import {ArticleRoutingModule} from './article-routing.module';
 import {ThemeModule} from '../../@theme/theme.module';
 import {NgxEchartsModule} from 'ngx-echarts';
 import {AnalyseComponent} from './analyse/analyse.component';
+import {ArticleGuard} from "../guard/article.guard";
 
 const component = [
   ArticleComponent,
@@ -22,6 +23,7 @@ const component = [
   declarations: [
     ...component
   ],
+  providers: [ ArticleGuard ]
 })
 
 export class ArticleModule { }

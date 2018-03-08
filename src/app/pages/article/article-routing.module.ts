@@ -5,11 +5,12 @@ import {RouterModule, Routes} from '@angular/router';
 import {ArticleComponent} from './article.component';
 import {NgModule} from '@angular/core';
 import {AnalyseComponent} from './analyse/analyse.component';
+import {ArticleGuard} from '../guard/article.guard';
 
 const routes: Routes = [{
   path: '', component: ArticleComponent,
   children: [
-    { path: 'analyse', component: AnalyseComponent }
+    { path: 'analyse', canActivate: [ArticleGuard], component: AnalyseComponent }
   ]
 }];
 
