@@ -51,16 +51,20 @@ export const MENU_ITEMS: NbMenuItem[] = [
     icon: 'nb-cloudy',
     children: [
       {
-        title: 'Google Maps',
+        title: '结构化',
         link: '/pages/maps/gmaps',
       },
       {
-        title: 'Leaflet Maps',
+        title: 'url数据分析',
         link: '/pages/maps/leaflet',
       },
       {
-        title: 'Bubble Maps',
+        title: '文本分析',
         link: '/pages/maps/bubble',
+      },
+      {
+        title: '舆情分析',
+        link: '/pages/maps/analyse',
       },
     ],
   },
