@@ -1,0 +1,21 @@
+<div class="row">
+  <div class="col-md-12">
+    <nb-card>
+      <nb-card-header>
+        <div class="input-group has-find-icon">
+          <input type="text" placeholder="输入url开始分析" class="form-control" [(ngModel)]="url"/>
+          <span class="input-group-btn">
+            <button class="btn btn-success"  [routerLink]="['/pages/url/search-result']" [queryParams] = "{ url: url}">开始分析</button>
+          </span>
+        </div>
+      </nb-card-header>
+    </nb-card>
+  </div>
+  <div class="col-md-12">
+    <nb-card>
+      <nb-card-header>小提示</nb-card-header>
+      <nb-card-body>{{ url }}</nb-card-body>
+      <nb-card-footer><span style="float: right">ZOOM团队</span></nb-card-footer>
+    </nb-card>
+  </div>
+</div>

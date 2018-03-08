@@ -20,16 +20,6 @@ export const MENU_ITEMS: NbMenuItem[] = [
     title: 'url数据分析',
     icon: 'nb-keypad',
     link: '/pages/url',
-    // children: [
-    //   {
-    //     title: 'Buttons',
-    //     link: '/pages/ui-features/buttons',
-    //   },
-    //   {
-    //     title: 'Grid',
-    //     link: '/pages/ui-features/grid',
-    //   },
-    // ],
   },
   {
     title: '文本分析',
