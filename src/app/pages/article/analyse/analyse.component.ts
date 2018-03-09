@@ -22,8 +22,9 @@ export class AnalyseComponent implements OnInit {
 
   ngOnInit() {
     // this.dataSource = this.http.get('/api/article', {params: {'article': this.srcTextContent}});
-    console.log(this.srcTextContent);
-    this.dataSource = this.http.post('/api/article', { parrms: { 'article': this.srcTextContent}});
+    this.dataSource = this.http.post('/api/article', null, {
+      params : { 'article': this.srcTextContent }
+    });
     this.dataSource.subscribe( data => console.log(data) );
     this.themeSubscription = this.theme.getJsTheme().subscribe(config => {
 

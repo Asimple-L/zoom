@@ -29,7 +29,10 @@
         "../node_modules/echarts/dist/echarts.js",
         "../node_modules/echarts/map/js/china.js",
         "../node_modules/echarts/dist/extension/bmap.js",
-        "../node_modules/chart.js/dist/Chart.js"
+        "./assets/vendors/echarts.min.js",
+        "./assets/vendors/echarts.world.min.js",
+        "./assets/vendors/wordcloud .js",
+        "../node_modules/chart.js/dist/Chart.min.js"
       ],
       "environmentSource": "environments/environment.ts",
       "environments": {

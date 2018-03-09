@@ -25,9 +25,12 @@ const routes: Routes = [{
     path: 'url',
     loadChildren: './URL/url.module#UrlModule',
   }, {
-    path: '',
-    redirectTo: 'structed',
-    pathMatch: 'full',
+    path: 'file',
+    loadChildren: './file/file.module#FileModule',
+  }, {
+      path: '',
+      redirectTo: 'structed',
+      pathMatch: 'full',
   }],
 }];
 

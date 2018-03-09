@@ -4,6 +4,7 @@ import { PagesComponent } from './pages.component';
 import { PagesRoutingModule } from './pages-routing.module';
 import { ThemeModule } from '../@theme/theme.module';
 import {NgxEchartsModule} from 'ngx-echarts';
+import { FileComponent } from './file/file.component';
 
 const PAGES_COMPONENTS = [
   PagesComponent,

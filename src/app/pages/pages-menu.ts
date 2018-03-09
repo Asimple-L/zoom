@@ -22,19 +22,23 @@ export const MENU_ITEMS: NbMenuItem[] = [
     link: '/pages/url',
   },
   {
-    title: '文本分析',
+    title: '语义分析',
     icon: 'nb-compose',
-    link: '/pages/article',
+    children: [
+      {
+        title: '文本分析',
+        link: '/pages/article'
+      },
+      {
+        title: '文档分析',
+        link: 'file'
+      }
+    ]
   },
   {
     title: '舆情分析',
     icon: 'nb-bar-chart',
-    children: [
-      {
-        title: 'Form Inputs',
-        link: '/pages/forms/inputs',
-      },
-    ],
+    // link: '',
   },
   {
     title: 'API说明',

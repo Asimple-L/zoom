@@ -26,6 +26,6 @@ export class ArticleComponent implements OnInit {
   ngOnInit(): void {
   }
   toAnalyse() {
-    this.router.navigate(['/pages/article/analyse'], { queryParams: { 'article': this.srcText}});
+    this.router.navigate(['/pages/article/analyse'], { queryParams: { 'article': this.srcTextContent}});
   }
 }
