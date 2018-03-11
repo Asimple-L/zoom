@@ -7,10 +7,8 @@ import {ResultComponent} from './result/result.component';
 import {NgModule} from '@angular/core';
 
 const routes: Routes = [{
-  path: '', component: FileComponent,
-  children: [
-    { path: 'result', component: ResultComponent }
-  ]
+  path: '', component: FileComponent, } , {
+  path: 'result', component: ResultComponent
 }];
 
 @NgModule({

@@ -4,9 +4,26 @@
 import {RouterModule, Routes} from '@angular/router';
 import {AboutComponent} from './about.component';
 import {NgModule} from '@angular/core';
+import {ProjectComponent} from './project/project.component';
+import {TeamComponent} from './team/team.component';
+import {UsComponent} from './us/us.component';
 
 const routes: Routes = [{
   path: '', component: AboutComponent,
+  children: [
+    {
+      path: 'project',
+      component: ProjectComponent,
+    },
+    {
+      path: 'team',
+      component: TeamComponent,
+    },
+    {
+      path: 'us',
+      component: UsComponent,
+    },
+  ]
 }];
 
 @NgModule({

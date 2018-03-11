@@ -32,7 +32,8 @@
         "./assets/vendors/echarts.min.js",
         "./assets/vendors/echarts.world.min.js",
         "./assets/vendors/wordcloud .js",
-        "../node_modules/chart.js/dist/Chart.min.js"
+        "../node_modules/chart.js/dist/Chart.min.js",
+        "../node_modules/jquery/dist/jquery.min.js"
       ],
       "environmentSource": "environments/environment.ts",
       "environments": {

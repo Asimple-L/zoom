@@ -14,20 +14,24 @@ export const MENU_ITEMS: NbMenuItem[] = [
   {
     title: '结构化',
     icon: 'nb-edit',
-    link: '/pages/structed',
+    link: 'structed',
   },
-  {
-    title: 'url数据分析',
-    icon: 'nb-keypad',
-    link: '/pages/url',
-  },
+  // {
+  //   title: 'url数据分析',
+  //   icon: 'nb-keypad',
+  //   link: 'url',
+  // },
   {
     title: '语义分析',
     icon: 'nb-compose',
     children: [
       {
+        title: 'url数据分析',
+        link: 'url'
+      },
+      {
         title: '文本分析',
-        link: '/pages/article'
+        link: 'article'
       },
       {
         title: '文档分析',
@@ -36,9 +40,9 @@ export const MENU_ITEMS: NbMenuItem[] = [
     ]
   },
   {
-    title: '舆情分析',
+    title: '资讯关注',
     icon: 'nb-bar-chart',
-    // link: '',
+    link: 'change',
   },
   {
     title: 'API说明',
@@ -68,15 +72,15 @@ export const MENU_ITEMS: NbMenuItem[] = [
     children: [
       {
         title: '项目简介',
-        link: '/pages/charts/echarts',
+        link: '/pages/about/project',
       },
       {
         title: '团队介绍',
-        link: '/pages/charts/chartjs',
+        link: '/pages/about/team',
       },
       {
         title: '联系我们',
-        link: '/pages/charts/d3',
+        link: '/pages/about/us',
       },
     ],
   },

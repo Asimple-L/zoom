@@ -7,6 +7,8 @@ import {NgModule} from '@angular/core';
 import {NgxEchartsModule} from 'ngx-echarts';
 import {ThemeModule} from '../../@theme/theme.module';
 import {FileRoutingModule} from './file-routing.module';
+import {CommonModule} from '@angular/common';
+import {FileUploadModule} from 'ng2-file-upload';
 
 
 const component = [
@@ -18,7 +20,9 @@ const component = [
   imports: [
     FileRoutingModule,
     ThemeModule,
-    NgxEchartsModule
+    NgxEchartsModule,
+    CommonModule,
+    FileUploadModule
   ],
   declarations: [ ...component ]
 })

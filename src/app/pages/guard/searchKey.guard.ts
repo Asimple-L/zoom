@@ -7,8 +7,7 @@ import {ActivatedRouteSnapshot, CanActivate} from '@angular/router';
 export class SearchKeyGuard implements CanActivate {
   canActivate( route: ActivatedRouteSnapshot ) {
     const str = route.queryParams['search'];
-    console.log(typeof str);
-    if ( str == '' ||  str == 'undefined' ) {
+    if ( str == '' ||  typeof str == 'undefined' ) {
       return false;
     } else {
       return true;

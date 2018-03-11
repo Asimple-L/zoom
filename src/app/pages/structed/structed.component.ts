@@ -1,6 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {HttpClient} from '@angular/common/http';
-import {FormControl} from '@angular/forms';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-structed',
@@ -15,8 +14,7 @@ export class StructedComponent implements OnInit {
   newWords: string[] = [''];
   maps: Map<string, string>;
   options: any = {};
-  themeSubscription: any;
-  constructor(private http: HttpClient) {
+  constructor(private routes: Router) {
   }
 
   ngOnInit(): void {
@@ -26,5 +24,11 @@ export class StructedComponent implements OnInit {
     this.newWords.unshift(wordContent);
     this.isAddKeywordHidden = true;
     this.newWord = '';
+  }
+  send(event) {
+    const keyCode = event.keyCode;
+    if ( keyCode == 13 ) {
+      this.routes.navigate(['/pages/structed/searchcontent'], { queryParams: {'search': this.search}});
+    }
   }
 }

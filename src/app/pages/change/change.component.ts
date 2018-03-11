@@ -5,7 +5,7 @@ import {Component} from '@angular/core';
 
 @Component({
   selector: 'app-change',
-  template: '<div>change works!!</div><router-outlet></router-outlet>'
+  template: '<router-outlet></router-outlet>'
 })
 
 export class ChangeComponent { }

@@ -14,7 +14,7 @@ const PAGES_COMPONENTS = [
   imports: [
     PagesRoutingModule,
     ThemeModule,
-    NgxEchartsModule
+    NgxEchartsModule,
   ],
   declarations: [
     ...PAGES_COMPONENTS,

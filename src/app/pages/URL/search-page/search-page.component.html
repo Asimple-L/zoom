@@ -3,7 +3,7 @@
     <nb-card>
       <nb-card-header>
         <div class="input-group has-find-icon">
-          <input type="text" placeholder="输入url开始分析" class="form-control" [(ngModel)]="url"/>
+          <input type="text" placeholder="输入url开始分析" class="form-control" [(ngModel)]="url" (keyup)="send($event)"/>
           <span class="input-group-btn">
             <button class="btn btn-success"  [routerLink]="['/pages/url/search-result']" [queryParams] = "{ url: url}">开始分析</button>
           </span>
