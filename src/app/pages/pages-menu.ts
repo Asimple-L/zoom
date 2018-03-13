@@ -16,11 +16,6 @@ export const MENU_ITEMS: NbMenuItem[] = [
     icon: 'nb-edit',
     link: 'structed',
   },
-  // {
-  //   title: 'url数据分析',
-  //   icon: 'nb-keypad',
-  //   link: 'url',
-  // },
   {
     title: '语义分析',
     icon: 'nb-compose',
