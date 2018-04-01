@@ -1,7 +1,6 @@
 import { RouterModule, Routes } from '@angular/router';
 import { NgModule } from '@angular/core';
 import { PagesComponent } from './pages.component';
-import {ArticleModule} from "./article/article.module";
 
 
 const routes: Routes = [{
@@ -27,6 +26,9 @@ const routes: Routes = [{
   }, {
     path: 'file',
     loadChildren: './file/file.module#FileModule',
+  }, {
+    path: 'sentiment',
+    loadChildren: './sentiment/sentiment.module#SentimentModule',
   }, {
       path: '',
       redirectTo: 'structed',

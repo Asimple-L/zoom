@@ -43,21 +43,6 @@ import {DomSanitizer} from '@angular/platform-browser';
             <div class="col-md-9">
               <li class="list-group-item">{{modalContent['text']}}</li>
             </div>
-            <div class="col-md-2">
-              <span>原网页</span>
-            </div>
-            <div class="col-md-9">
-              <li class="list-group-item"><iframe [src]="safeUrl"></iframe>
-                <!--<button (click)="openAnotherModal()">提交</button>-->
-                <!--<button (click)="isHiddenIframe = !isHiddenIframe">放大</button>-->
-                <button (click)="forOpen()">放大</button>
-              </li>
-            </div>
-            <iframe [hidden]="isHiddenIframe" [src]="safeUrl" id="ifr" name="ifr" scrolling="yes"
-            style="background:white;width: 800px;z-index:999;position:absolute;left:50%;top:0;margin-left:-400px;">
-            </iframe>
-            <button [hidden]="isHiddenIframe" (click)="isHiddenIframe = !isHiddenIframe"
-            style="position: fixed;top: 20px; right: 20px;">close</button>
           </div>
         </ul>
       </div>
@@ -72,8 +57,8 @@ export class DetailModalComponent implements OnInit {
 
   modalHeader: any;
   modalContent: any;
-  isHiddenIframe: boolean = true;
-  isHiddenAdd: boolean = true;
+  isHiddenIframe = true;
+  isHiddenAdd = true;
   safeUrl: any;
   constructor(private activeModal: NgbActiveModal, private sanitizer: DomSanitizer) {
   }

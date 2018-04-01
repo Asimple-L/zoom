@@ -2,7 +2,6 @@
  * Created by Asimple on 2018/3/4.
  */
 import {RouterModule, Routes} from '@angular/router';
-import {UrlComponent} from './url.component';
 import {NgModule} from '@angular/core';
 import {SearchPageComponent} from './search-page/search-page.component';
 import {SearchResultComponent} from './search-result/search-result.component';

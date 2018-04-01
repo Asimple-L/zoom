@@ -7,8 +7,8 @@ import {ChangeComponent} from './change.component';
 import { ShowComponent } from './show/show.component';
 import { ChangeSearchComponent } from './change-search/change-search.component';
 import {ThemeModule} from '../../@theme/theme.module';
-import {NgxEchartsModule} from 'ngx-echarts';
 import {SearchKeyGuard} from '../guard/searchKey.guard';
+import {NgxEchartsModule} from 'ngx-echarts';
 
 const component = [
   ChangeComponent,

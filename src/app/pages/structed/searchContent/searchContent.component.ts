@@ -36,23 +36,14 @@ export class SearchContentComponent implements OnInit {
   ngOnInit(): void {
     this.infoIndex = new Array<string>();
     this.searchUrl = this.routerInfo.snapshot.queryParams['search'];
-    console.log(this.searchUrl);
-    // this.dataSourse = this.http.get('/api/search', {params: {'keyword': this.searchUrl, 'page': 1}})
-    //   .map((res) => res.json());
     this.dataSourse = this.http.get('/api/search', { params: { 'keyword': this.searchUrl, 'page': '1'}} );
     this.dataSourse.subscribe((data) => {
-     console.log(data['counts']);
-     console.log(data);
      this.infoData = data;
      this.totalCount = data['counts'];
      this.totalPages = this.totalCount / this.pageCounts;
-     /*if (this.totalCount - this.totalPages * this.pageCounts > 0) {
-       this.totalPages = this.totalPages + 1;
-     }*/
      if (this.totalPages < 4) {
        this.pagesArray = new Array(this.totalPages);
      }
-     /*console.log(data['info']);*/
      for (const info in data['info']) {
        if (info) {
          this.infoIndex.push(info);
@@ -79,7 +70,6 @@ export class SearchContentComponent implements OnInit {
     downloadModal.componentInstance.modalContent = '';
   }
   showDetailModal(id: any) {
-    /*console.log(id);*/
     const detailModal = this.buttonModalService.open(DetailModalComponent, {
       size: 'lg',
       backdrop: 'static',
@@ -95,18 +85,13 @@ export class SearchContentComponent implements OnInit {
       if (this.paginationModel > 4 && this.paginationModel > this.firstPage + 3) {
         this.firstPage += 1;
       }
-      /*将下一页的页号传给服务器*/
       this.infoIndex = new Array<string>();
       this.dataSourse = this.http.get('/api/search', {params: {'keyword': this.searchUrl, 'page': this.curPage.toString()}});
       this.dataSourse.subscribe((data) => {
-        /*console.log(data['counts']);
-        console.log(data);*/
         this.infoData = data;
-        /*console.log(data['info']);*/
         for (const info in data['info']) {
           if (info) {
             this.infoIndex.push(info);
-           /* console.log('nextPage ' + info);*/
           }
         }
       });
@@ -127,14 +112,12 @@ export class SearchContentComponent implements OnInit {
         this.firstPage = 1;
       }
     }
-    /*将下一页的页号传给服务器*/
     this.infoIndex = new Array<string>();
     this.dataSourse = this.http.get('/api/search', {params: {'keyword': this.searchUrl, 'page': this.curPage.toString()}});
     this.dataSourse.subscribe((data) => {
       console.log(data['counts']);
       console.log(data);
       this.infoData = data;
-      /*console.log(data['info']);*/
       for (const info in data['info']) {
         if (info) {
           this.infoIndex.push(info);
@@ -145,13 +128,11 @@ export class SearchContentComponent implements OnInit {
   showPage(n) {
     this.curPage = n;
     this.paginationModel = n;
-    /*将当前页的页号传给服务器*/
     this.infoIndex = new Array<string>();
     this.dataSourse = this.http.get('/api/search', {params: {'keyword': this.searchUrl, 'page': this.curPage.toString()}});
     this.dataSourse.subscribe((data) => {
       console.log(data['counts']);
       this.infoData = data;
-      /*console.log(data['info']);*/
       for (const info in data['info']) {
         if (info) {
           this.infoIndex.push(info);

@@ -13,7 +13,7 @@ export const MENU_ITEMS: NbMenuItem[] = [
   },
   {
     title: '结构化',
-    icon: 'nb-edit',
+    icon: 'nb-title',
     link: 'structed',
   },
   {
@@ -38,6 +38,11 @@ export const MENU_ITEMS: NbMenuItem[] = [
     title: '资讯关注',
     icon: 'nb-bar-chart',
     link: 'change',
+  },
+  {
+    title: '舆情查询',
+    icon: 'nb-lightbulb',
+    link: 'sentiment'
   },
   {
     title: 'API说明',
@@ -68,10 +73,6 @@ export const MENU_ITEMS: NbMenuItem[] = [
       {
         title: '项目简介',
         link: '/pages/about/project',
-      },
-      {
-        title: '团队介绍',
-        link: '/pages/about/team',
       },
       {
         title: '联系我们',
